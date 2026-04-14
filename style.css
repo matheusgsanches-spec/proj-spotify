@@ -12,7 +12,10 @@ body {
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
 }
-
+header h1{
+    color: white;
+    font-size: 1em;
+}
 header {
     width: 100vw;
     height: 7vh;
