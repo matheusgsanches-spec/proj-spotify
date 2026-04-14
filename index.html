@@ -12,7 +12,8 @@
     <header>
         <img src="img/logo.spotify.png" alt="">
         <button><img src="img/img2.jpg" alt=""></button>
-        <input type="text" name="" id="inputHeader" placeholder="O que você quer ouvir?">
+        <input type="text" id="inputHeader" placeholder="O que você quer ouvir?">
+
         <div class="headerUl">
             <button>Premium</button>
             <button>Baixar</button>
@@ -22,52 +23,127 @@
             <button>Entrar</button>
         </div>
     </header>
+
     <main>
         <div id="esquerda">
             <button>+ Criar</button>
+
             <div id="article1">
                 <h4>Crie sua primeira playlist</h4>
-                <p>é facil vamos te ajudar</p>
+                <p>é fácil, vamos te ajudar</p>
                 <button>Criar playlist</button>
             </div>
+
             <div id="article2">
                 <h4>Que tal seguir um podcast novo?</h4>
-                <p>Avisaremos você sobre novos episodios</p>
+                <p>Avisaremos você sobre novos episódios</p>
                 <button>Explore podcasts</button>
             </div>
         </div>
+
         <div id="direita">
-           <h1>Músicas em alta</h1>
-           <div id="img">
-            <div class="card">
-            <img src="img/h&j1.jfif" alt="Artista 1">
-            <p class="bio">Artista 1: Cantor de pop famoso</p>
+            <h1>Músicas em alta</h1>
+
+            <div id="img">
+                <div class="card">
+                    <button id="btn1"><img src="img/h&j1.jfif" alt=""></button>
+                    <p class="bio">Duo musical de sucesso</p>
+                </div>
+
+                <div class="card">
+                    <button id="btn2"><img src="img/j&m2.jfif" alt=""></button>
+                    <p class="bio">Duo musical de sucesso</p>
+                </div>
+
+                <div class="card">
+                    <button id="btn3"><img src="img/MM.jfif" alt=""></button>
+                    <p class="bio">Ícone do hip hop</p>
+                </div>
+
+                <div class="card">
+                    <button id="btn4"><img src="img/5.jfif" alt=""></button>
+                    <p class="bio">Revelação do momento</p>
+                </div>
+
+                <div class="card">
+                    <button id="btn5"><img src="img/sferaEbastsa.jfif" alt=""></button>
+                    <p class="bio">SferaEbasta</p>
+                </div>
+
+                <div class="card">
+                    <button id="btn6"><img src="img/matuai.jfif" alt=""></button>
+                    <p class="bio">Matue</p>
+                </div>
+
+                <div class="card">
+                    <button id="btn7"><img src="img/teto.jfif" alt=""></button>
+                    <p class="bio">Teto/30praum</p>
+                </div>
+
+                <div class="card">
+                    <button id="btn8"><img src="img/wiu.jfif" alt=""></button>
+                    <p class="bio">Wiu</p>
+                </div>
             </div>
-            <img src="img/j&m2.jfif" alt="">
-            <img src="img/MM.jfif" alt="">
-            <img src="img/5.jfif" alt="">
-            <img src="img/5.jfif" alt="">
-            <img src="img/5.jfif" alt="">
-            <img src="img/5.jfif" alt="">
-            <img src="img/5.jfif" alt="">
-            <img src="img/5.jfif" alt="">
-           </div>
-           <div id="img2">
-            <img src="img/MM.jfif" alt="">
-            <img src="img/MM.jfif" alt="">
-            <img src="img/MM.jfif" alt="">
-            <img src="img/MM.jfif" alt="">
-            <img src="img/MM.jfif" alt="">
-            <img src="img/MM.jfif" alt="">
-            <img src="img/MM.jfif" alt="">
-            <img src="img/MM.jfif" alt="">
-            <img src="img/MM.jfif" alt="">
-           </div>
-        </div>
+
+            <div id="img2">
+                <div class="card">
+                    <button id="btn9"><img src="img/yunkvin.jfif" alt=""></button>
+                    <p class="bio">The best</p>
+                </div>
+
+                <div class="card">
+                    <button id="btn10"><img src="img/download.jfif" alt=""></button>
+                    <p class="bio">Drake</p>
+                </div>
+
+                <div class="card">
+                    <button id="btn11"><img src="img/llivinho.jfif" alt=""></button>
+                    <p class="bio">Mc livinho</p>
+                </div>
+
+                <div class="card">
+                    <button id="btn12"><img src="img/paiva.jfif" alt=""></button>
+                    <p class="bio">Mc Paiva</p>
+                </div>
+
+                <div class="card">
+                    <button id="btn13"><img src="img/leozinho zs.jfif" alt=""></button>
+                    <p class="bio">Mc Leozinho ZS</p>
+                </div>
+
+                <div class="card">
+                    <button id="btn14"><img src="img/ryan sp.jfif" alt=""></button>
+                    <p class="bio">Mc Ryan SP</p>
+                </div>
+
+                <div class="card">
+                    <button id="btn15"><img src="img/kevin.jfif" alt=""></button>
+                    <p class="bio">The best</p>
+                </div>
+
+                <div class="card">
+                    <button id="btn16"><img src="img/ig.jfif" alt=""></button>
+                    <p class="bio">Mc Igor Guilherme</p>
+                </div>
+            </div>
     </main>
+
     <footer>
-        eojaoreja
+        <h1>Testar o premium de graça</h1>
+        <p>Inscreva-se para curtir música ilimitada e podcasts só com alguns anuncios.Não precisa de cartão de credito
+        </p>
+        <button>
+            Inscreva-se Grátis
+
+        </button>
     </footer>
+    <div id="playerContainer">
+        <button onclick="tocarMusica()">Tocar</button>
+        <audio id="player" controls></audio>
+    </div>
+
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>

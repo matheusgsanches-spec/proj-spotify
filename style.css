@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -9,6 +10,7 @@ body {
     gap: 7px;
     display: flex;
     flex-direction: column;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -20,13 +22,14 @@ header {
     background-color: #000000;
 
 
+
 }
 
 header button {
     border: none;
     outline: none;
     border-radius: 50%;
-
+    cursor: pointer;
 }
 
 header button img {
@@ -101,6 +104,7 @@ main {
     color: white;
     border: none;
     outline: none;
+    cursor: pointer;
     background-color: rgb(45, 45, 45);
     font-family: var(--encore-text-font-family, var(--encore-body-font-stack));
     ;
@@ -171,63 +175,193 @@ main {
     width: 80vw;
     height: 83vh;
     display: flex;
-    background-color: #2f2e2e;
+    background: linear-gradient(to bottom, #2f3e36, #121212);
     border-radius: 25px;
-    flex-direction:  column;
+    flex-direction: column;
 }
-#direita h1{
+
+#direita h1 {
     margin: 20px;
     color: white;
     display: flex;
     justify-content: start;
     align-items: start;
 }
-#img{
-display: flex;
-    gap: 15px; 
+
+#img {
+    display: flex;
+    gap: 30px;
     margin: 20px;
     margin: 20px;
     display: flex;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
+
 #img img {
-    width: 150px; 
+    width: 170px;
     border-radius: 10px;
 }
-#img2{
+
+#img2 {
     display: flex;
-    gap: 15px; 
+    gap: 30px;
     margin: 20px;
     margin: 20px;
     display: flex;
 }
+
 #img2 img {
-    width: 150px; 
+    width: 170px;
     border-radius: 10px;
 }
+
 .card {
     display: flex;
-    flex-direction: column; /* Coloca imagem em cima, bio embaixo */
-    align-items: center; /* Centraliza o conteúdo */
-    width: 150px; /* mesmo tamanho da imagem */
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
 }
+
+.card button {
+
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.card button img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.card button:hover img {
+    transform: scale(1.08);
+}
+
 .card img {
     width: 150px;
     border-radius: 10px;
+    cursor: pointer;
 }
+
 .card .bio {
     margin-top: 10px;
     color: white;
     font-size: 0.9em;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+
 }
+
 footer {
     width: 100vw;
     height: 8vh;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     display: flex;
-    background-image: linear-gradient(to right, #FF69B4, #800080);
+    background: linear-gradient(to right, #e52ecf, #6a82fb);
     border-radius: 25px;
     overflow: hidden;
+
+}
+
+footer h1 {
+    padding: 3px;
+    color: white;
+    margin: 3px;
+    font-size: 4mm;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer p {
+    padding: 3px;
+    margin: 3px;
+    font-size: 4mm;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer button {
+    width: 200px;
+    height: 50px;
+    margin: 50px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#loginOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loginBox {
+    background: #121212;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.loginBox input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 200px;
+}
+
+.loginBox button {
+    padding: 10px 20px;
+    background: #1db954;
+    border: none;
+    cursor: pointer;
+}
+
+/* PLAYER FIXO (estilo Spotify) */
+#playerContainer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #181818;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-top: 1px solid #333;
+    z-index: 999;
+}
+
+/* Botão tocar */
+#playerContainer button {
+    background-color: #1db954;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+
+/* Player de áudio */
+#player {
+    width: 300px;
+}
+body {
+    padding-bottom: 90px;
 }
